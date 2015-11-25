@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>heatmap.js | Dynamic Heatmaps for the Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+<div class="heatmap-wrapper">
+    <div class="heatmap">
+
+    </div>
+</div>
+<div class="wrapper">
+
+        <div id="example-1" style="float:left; background:rgba(0,0,0,.4); width:600px; height:450px; margin-top:10px;"> </div>
+
+</div>
+
+<script src="js/heatmap.min.js"></script>
+<script>
+    window.onload = function () {
+        var ex1el = document.getElementById('example-1');
+
+        var heatmap1 = h337.create({
+            container: ex1el
+        });
+
+        var refreshHeatmap1 = function () {
+            var data1 = {};
+            var datap1 = [
+                {x : 10 , y : 10 , value : 1},
+                {x : 50 , y : 50 , value : 2},
+                {x : 100 , y : 100 , value : 3},
+                {x : 150 , y : 150 , value : 4},
+                {x : 200 , y : 200 , value : 5},
+                {x : 250 , y : 250 , value : 6},
+                {x : 300 , y : 300 , value : 7},
+                {x : 500 , y : 100 , value : 8},
+                {x : 600 , y : 500 , value : 9},
+                {x : 200 , y : 400 , value : 10}];
+            data1["max"] = 10;
+            data1["data"] = datap1;
+
+            heatmap1.setData(data1);
+        };
+        refreshHeatmap1();
+
+    };
+</script>
+
+
+</body>
+</html>
