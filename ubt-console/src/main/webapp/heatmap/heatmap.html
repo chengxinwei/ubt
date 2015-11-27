@@ -13,8 +13,9 @@
     </div>
 </div>
 <div class="wrapper">
-
-        <div id="example-1" style="float:left; background:rgba(0,0,0,.4); width:600px; height:450px; margin-top:10px;"> </div>
+        <img src="image/baidu_background.png" style="float:left;position:absolute;"></img>
+        <div id="example-1" style="float:left; position:absolute;width:1280px; height:960px;"> </div>
+       
 
 </div>
 
@@ -30,17 +31,20 @@
         var refreshHeatmap1 = function () {
             var data1 = {};
             var datap1 = [
-                {x : 10 , y : 10 , value : 1},
-                {x : 50 , y : 50 , value : 2},
-                {x : 100 , y : 100 , value : 3},
-                {x : 150 , y : 150 , value : 4},
-                {x : 200 , y : 200 , value : 5},
-                {x : 250 , y : 250 , value : 6},
-                {x : 300 , y : 300 , value : 7},
-                {x : 500 , y : 100 , value : 8},
-                {x : 600 , y : 500 , value : 9},
-                {x : 200 , y : 400 , value : 10}];
-            data1["max"] = 10;
+                {x : 1081 , y : 143 , value : 3},
+                {x : 1082 , y : 143 , value : 6},
+                {x : 1085 , y : 143 , value : 33},
+                {x : 127  , y : 612 , value : 10},
+                {x : 141 , y : 364 , value : 10},
+                {x : 148 , y : 588 , value : 10},
+                {x : 180 , y : 164 , value : 10},
+                {x : 246 , y : 248 , value : 20},
+                {x : 706 , y : 128 , value : 10},
+                {x : 761 , y : 143 , value : 10},
+                {x : 769 , y : 127 , value : 5},
+
+                ];
+            data1["max"] = 33;
             data1["data"] = datap1;
 
             heatmap1.setData(data1);
